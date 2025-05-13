@@ -1,0 +1,21 @@
+/* Style spécifique à la page de connexion */
+#loginForm {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#loginMessage {
+    margin-top: 15px;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 600;
+}
+
+#loginMessage.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}

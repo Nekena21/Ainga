@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choisir un utilisateur</title>
+    <link rel="stylesheet" href="./src/styles/style.css">
+    <style>
+        section {
+            background-color: #0056b3;
+            width: 100%;
+            margin: 40px auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px #0001;
+            padding: 32px;
+        }
+        .logo {
+            text-align: center;
+            color: white;
+            font-size: larger;
+            margin-bottom: 20px;
+        }
+        label {
+            color: rgb(7, 9, 83);
+        }
+        input, button {
+            margin-top: 8px;
+        }
+        button {
+            background-color: rgb(7, 9, 83);
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="logo">
+            <img src="assets/icon/logo.png" alt="logo Ainga" width="100px" height="100px">
+            <br>Choisir un utilisateur à discuter
+        </div>
+        <input type="text" id="searchUserInput" placeholder="Rechercher un utilisateur à discuter..." />
+        <div id="userList"></div>
+        <button onclick="window.location.href='login.html'">Déconnexion</button>
+    </section>
+    <script src="./src/scripts/selectUser.js"></script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discussion</title>
+    <link rel="stylesheet" href="./src/styles/style.css">
+    <style>
+        section {
+            background-color: #0056b3;
+            width: 100%;
+            margin: 40px auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px #0001;
+            padding: 32px;
+        }
+        .logo {
+            text-align: center;
+            color: white;
+            font-size: larger;
+            margin-bottom: 20px;
+        }
+        label {
+            color: rgb(7, 9, 83);
+        }
+        input, button {
+            margin-top: 8px;
+        }
+        button {
+            background-color: rgb(7, 9, 83);
+            color: white;
+            font-weight: bold;
+        }
+        #chatBox {
+            background: #fff;
+            border-radius: 8px;
+            min-height: 200px;
+            max-height: 350px;
+            overflow-y: auto;
+            margin-bottom: 16px;
+            padding: 16px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .message-bubble {
+            max-width: 70%;
+            padding: 10px 16px;
+            border-radius: 18px;
+            margin-bottom: 4px;
+            word-break: break-word;
+            position: relative;
+            font-size: 1em;
+            box-shadow: 0 1px 3px #0001;
+        }
+
+        .sent {
+            align-self: flex-end;
+            background-color: #0078fe;
+            color: #fff;
+            border-bottom-right-radius: 4px;
+        }
+
+        .received {
+            align-self: flex-start;
+            background-color: #e5e5ea;
+            color: #222;
+            border-bottom-left-radius: 4px;
+        }
+
+        .sender {
+            font-size: 0.85em;
+            font-weight: bold;
+            opacity: 0.7;
+            margin-bottom: 2px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="logo">
+            <img src="assets/icon/logo.png" alt="logo Ainga" width="100px" height="100px">
+            <br>Discussion
+        </div>
+        <input type="text" id="searchInput" placeholder="Rechercher un message..." />
+        <div id="chatBox">
+            <!-- Les messages seront affichés ici -->
+        </div>
+        <form id="messageForm" enctype="multipart/form-data">
+            <input type="text" id="messageInput" placeholder="Écrivez un message..." />
+            <input type="file" id="fileInput" name="fichier_joint" accept="image/*,video/*,audio/*,.txt" />
+            <button type="button" id="recordBtn">🎤</button>
+            <button type="submit">Envoyer</button>
+        </form>
+        <audio id="audioPreview" controls style="display:none;"></audio>
+        <button onclick="window.location.href='selectUser.html'">Retour</button>
+    </section>
+    <script src="./src/scripts/chat.js"></script>
+</body>
+</html>

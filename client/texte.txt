@@ -1,0 +1,14 @@
+cd C:\Users\ME-PC\Desktop\GestionCourrier
+git init
+git add .
+git commit -m "Initial commit"
+git remote add origin https://github.com/Nekena21/Ainga.git
+git branch -M main
+git push -u origin main
+
+git config --global user.email "safidy2121@gmail.com"
+git config --global user.name "Nekena21"
+git add .
+git commit -m "Initial commit"
+git branch -M main
+git push -u origin main

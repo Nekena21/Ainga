@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion</title>
+    <link rel="stylesheet" href="./src/styles/style.css">
+    <link rel="stylesheet" href="./src/styles/login.css">
+    <style>
+        section{
+            background-color: #0056b3;
+            width: 50vb;
+        }
+        .logo{
+            text-align: center;
+            color: white;
+            font-size: larger;
+            margin-bottom: 20px;
+        }
+        label{
+            color: rgb(7, 9, 83);
+        }
+        button{
+            background-color: rgb(7, 9, 83);
+        }
+        a{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="logo">
+            <img src="assets/icon/logo.png" alt="logo Ainga" width="100px" height="100px">
+            <br>Connexion
+        </div>
+        <form id="loginForm">
+            <div>
+                <label for="mail">Email :</label>
+                <input type="email" id="mail" name="mail" placeholder="exemple@exemple.com" required>    
+            </div>
+
+            <div>
+                <label for="mot_de_passe">Mot de passe :</label>
+                <input type="password" id="mot_de_passe" name="mot_de_passe" placeholder="******" required>    
+            </div>
+            <button type="submit">Se connecter</button>
+            <p><br>Pas encore inscrit ? <a href="register.html">Créer un compte</a></p>
+        </form>
+        <div id="loginMessage"></div>
+    </section>
+    <script src="./src/scripts/login.js"></script>
+</body>
+</html>

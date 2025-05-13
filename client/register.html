@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+    <link rel="stylesheet" href="./src/styles/style.css">
+    <link rel="stylesheet" href="./src/styles/register.css">
+    <style>
+        section{
+            background-color: #0056b3;
+            width: 50vb;
+        }
+        .logo{
+            text-align: center;
+            color: white;
+            font-size: larger;
+            margin-bottom: 20px;
+        }
+        label{
+            color: rgb(7, 9, 83);
+        }
+        button{
+            background-color: rgb(7, 9, 83);
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="logo">
+            <img src="assets/icon/logo.png" alt="logo Ainga" width="100px" height="100px">
+            <br>Veuillez saisir votre donneés
+        </div>
+        <form id="registerForm">
+            <div>
+                <label for="mail">Email :</label>
+                <input type="email" id="mail" name="mail" placeholder="exemple@exemple.com" required>    
+            </div>
+
+            <div>
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" name="nom" placeholder="Votre nom de famille" required>    
+            </div>
+
+            <div>
+                <label for="prenom">Prénom :</label>
+                <input type="text" id="prenom" name="prenom" placeholder="Votre prénom" required>    
+            </div>
+
+            <div>
+                <label for="tel">Téléphone :</label>
+                <input type="number" id="tel" name="tel" placeholder="Votre numéro Téléphone" required>    
+            </div>
+
+            <div>
+                <label for="mot_de_passe">Mot de passe :</label>
+                <input type="password" id="mot_de_passe" name="mot_de_passe" placeholder="********" required>    
+            </div>
+            <button type="submit">S'inscrire</button>
+        </form>
+        <div id="registerMessage"></div>
+    </section>
+    <script src="./src/scripts/register.js"></script>
+</body>
+</html>
